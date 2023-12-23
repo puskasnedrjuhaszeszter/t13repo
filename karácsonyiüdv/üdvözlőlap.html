@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Puskásné_dr_Juhász_Eszter">
+    <title>Kellemes Ünnepeket!</title>
+    <style>
+        body {
+            min-height: 100vh;
+            scroll-behavior: smooth;
+            text-rendering: optimizeSpeed;
+            line-height: 1.5;
+            background-image: url("macska-kari-fa.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #első {position: fixed;
+            top: -50%;
+            left: 5%;
+            width: 16%;
+        }
+
+        #második {position: fixed;
+            top: -50%;
+            left: 60%;
+            width: 16%;
+        }
+
+        #harmadik {position: fixed;
+            top: -50%;
+            left: 80%;
+            width: 16%;
+        }
+
+        @keyframes hullás1 {
+            0% {
+                top: -50%;
+            }
+
+            100% {
+                top: 80%;
+            }
+        }
+        @keyframes hullás2 {
+            0% {
+                top: -50%;;
+            }
+
+            100% {
+                top: 80%;
+            }
+        }
+        @keyframes hullás3 {
+            0% {
+                top: -50%;;
+            }
+
+            100% {
+                top: 80%;
+            }
+        }
+
+        .hullás1 {
+            animation: hullás1;
+            animation-duration: 2s;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+        }
+
+        .hullás2 {
+            animation: hullás2;
+            animation-duration: 2s;
+            animation-delay: 3s;
+            animation-fill-mode: forwards;
+        }
+
+        .hullás3 {
+            animation: hullás3;
+            animation-duration: 2s;
+            animation-delay: 5s;
+            animation-fill-mode: forwards;
+        }
+
+        p {
+            font-size: 50px;
+            color: gold;
+            font-weight: bold;
+            text-shadow: 3px 3px 5px black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="gömb.png" alt="gömb" title="gömb" class="hullás1" id="első">
+    <img src="gömb.png" alt="gömb" title="gömb" class="hullás2" id="második">
+    <img src="gömb.png" alt="gömb" title="gömb" class="hullás3" id="harmadik">
+    <p>Nagyon Boldog Karácsonyt és<br> sikerekben gazdag Új Évet kívánok!</p>
+</body>
+
+</html>
