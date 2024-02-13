@@ -81,10 +81,10 @@
             let megalloMasodik = Number(document.getElementById("megalloMasodik").value);
             let menetido = Math.abs(megalloMasodik - megalloelso);
             if (menetido==0){
-                document.getElementById("menetido").innerHTML = "Hiba: Azonos megállókat választott ki!";
+                alert ("Hiba: Azonos megállókat választott ki!");
             }
             else{
-                document.getElementById("menetido").innerHTML = "Menetidő: " + menetido +"perc!";
+                alert ("Menetidő: " + menetido +"perc!");
             }
         }
 </script>
