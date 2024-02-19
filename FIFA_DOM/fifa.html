@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Puskásné dr. Juhász Eszter Team13">
+    <title>FIFA feladatsor DOM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="fifa.css">
+</head>
+
+<body>
+    <div class="container">
+                <img src="fifa_world_cup_logo.jpg" alt="kupa" title="kupa" id="kep">
+                <h1 class="text-center">FIFA feladatsor</h1>
+                <h2>Csapat adatok</h2>
+                <button type="button" class="btn btn-danger rounded-4 w-25 my-3" id="alap_tablazat">Csapatok
+                    táblázata</button>
+                <table id="alap" class="table table-striped table-hover table-sm table-bordered">
+                    <tbody>
+                        <tr class="table-danger">
+                            <th>Csapat neve</th>
+                            <th>Helyezés</th>
+                            <th>Helyezés változása</th>
+                            <th>Pont</th>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr>
+
+                <button type="button" class="btn btn-danger rounded-4 w-25 my-3" id="csapatok_szam">Ranglistán szereplő
+                    csapatok száma:</button>
+                <p id="csapatok_sz"></p>
+                <hr>
+
+                <button type="button" class="btn btn-danger rounded-4 w-25 my-3" id="atlagpont">Csapatok
+                    átlagpontszáma</button>
+                <p id="atlagp"></p>
+                <hr>
+
+                <h2>Az átlag feletti pontot elért csapatok</h2>
+                <button type="button" class="btn btn-danger rounded-4 w-25 my-3" id="atlagf">Csapatok táblázata</button>
+                <table id="atlagf_tabla" class="table table-striped table-hover table-sm table-bordered">
+                    <tbody>
+                        <tr class="table-danger">
+                            <th>Csapatok neve</th>
+                            <th>Átlag feletti pontok</th>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr>
+
+                <h2>A legtöbbet javító csapat</h2>
+                <button type="button" class="btn btn-danger rounded-4 w-25 my-3" id="legtobbet_javito">Csapat
+                    adatai</button>
+                <p id="lt_javito"></p>
+                <hr>
+
+                <h2>Megtalálható-e a FIFA raglistában az adott ország?</h2>
+                <input type="text" class="form-control" id="orszagNev">
+                <button type="button" class="btn btn-danger rounded-4 w-25 my-3" id="adottOrszag">Ország
+                    megadása</button>
+                <p id="aOrszag"></p>
+                <hr>
+
+                <h2>Helyezések változása</h2>
+                <button type="button" class="btn btn-danger rounded-4 w-25 my-3" id="statisztika">Statisztikai
+                    táblázat</button>
+                <table id="stat" class="table table-striped table-hover table-sm table-bordered">
+                    <tbody>
+                        <tr class="table-danger">
+                            <th>Helyezések változása</th>
+                            <th>Csapatok száma</th>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr>
+            </div>
+    <script src="fifa.js"></script>
+</body>
+
+</html>

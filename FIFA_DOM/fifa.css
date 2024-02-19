@@ -1,0 +1,14 @@
+h1 {
+    text-shadow: 4px 4px 6px rgb(155, 63, 63); 
+}
+
+
+h2 {
+    text-decoration: underline;
+    text-decoration-color: rgb(218, 15, 15);
+
+}
+#kep {
+    max-inline-size: 15%;
+    float: inline-end;
+}
