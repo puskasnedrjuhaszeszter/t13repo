@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Puskásné dr. Juhász Eszter Team13">
+    <title>Táplálkozási pártok választása 2024</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="valasztasok.css">
+</head>
+<body>
+
+    <div id="szavazatok_tabla" class="container" style="display: none">
+        <span id="x_gomb">X</span>
+        <table id="f5" class="table table-striped table-hover table-sm table-bordered">
+            <h3>Szavazatok pártonkénti eloszlása</h3>
+            <tr class="table-primary">
+                <th>Párt neve</th>
+                <th>Szavazatok mennyisége</th>
+            </tr>
+        </table>
+    </div>
+
+    <div id="nyertesek_tabla" class="container" style="display: none">
+        <span id="x2_gomb">X</span>
+        <table id="f7" class="table table-striped table-hover table-sm table-bordered">
+            <h3>Nyertes jelöltek körzetenként</h3>
+            <tr class="table-primary">
+                <th>Körzet</th>
+                <th>Képviselő neve</th>
+                <th>Párt</th>
+                <th>Szavazatok száma</th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="container" id="feladatsor">
+
+        <h1>Táplálkozási pártok helyközi választása 2024</h1>
+        <div class="uj_feladat">
+            <img src="vote.png" alt="szavazas" title="szavazas" class="vote">
+            <h2>Hány képviselőjelölt indult a helyhatósági választásokon?</h2>
+        </div>
+        <input type="button" value="Válasz:" class="btn btn-primary rounded-3 w-25 my-3" id="f1gomb">
+        <div id="f1"></div>
+        <br>
+
+        <div class="uj_feladat">
+            <img src="vote.png" alt="szavazas" title="szavazas" class="vote">
+            <h2>Hány képviselőt indított az alábbi párt a helyhatósági választásokon?</h2>
+        </div>
+        <label for="f2menu"><h5>Kérem adja meg a keresett pártot:</h5></label>
+        <select id="f2menu" class="form-control rounded-3 w-25 my-3">
+                <option value="GYEP">Gyümölcsevők Pártja</option>
+                <option value="HEP">Húsevők Pártja</option>
+                <option value="TISZ">Tejivók Szövetsége</option>
+                <option value="ZEP">Zöldségevők Pártja</option>
+                <option value="-">Független</option>
+        </select>
+        <input type="button" value="Párt megadása:" class="btn btn-primary rounded-3 w-25 my-3" id="f2gomb">
+        <div id="f2"></div>
+        <br>
+
+        <div class="uj_feladat">
+            <img src="vote.png" alt="szavazas" title="szavazas" class="vote">
+            <h2>Hány szavazatot kapott az adott jelölt?</h2>
+        </div>
+        <input type="text" class="form-control rounded-3 w-25 my-3" id="f3input">
+        <input type="button" value="Jelölt nevének megadása:" class="btn btn-primary rounded-3 w-25 my-3" id="f3gomb">
+        <p id="f3"></p>
+        <br>
+
+        <div class="uj_feladat">
+            <img src="vote.png" alt="szavazas" title="szavazas" class="vote">
+            <h2>Milyen volt a részvételi arány a helyközi választáson?</h2>
+        </div>
+        <input type="button" value="Részvételi arány:" class="btn btn-primary rounded-3 w-25 my-3" id="f4gomb">
+        <p id="f4"></p>
+        <br>
+
+        <div class="uj_feladat">
+            <img src="vote.png" alt="szavazas" title="szavazas" class="vote">
+            <h2>Melyik párt mennyi szavazatot kapott a választáson?</h2>
+        </div>
+        <input type="button" value="Szavazatok eloszlása:" class="btn btn-primary rounded-3 w-25 my-3" id="f5gomb">
+        <br>
+
+        <div class="uj_feladat">
+            <img src="vote.png" alt="szavazas" title="szavazas" class="vote">
+            <h2>Melyik jelölt kapta a legtöbb szavazatot a helyközi választáson?</h2>
+        </div>
+        <ul id="f6">
+        </ul>
+        <input type="button" value="Legnépszerűbb jelölt:" class="btn btn-primary rounded-3 w-25 my-3" id="f6gomb">
+        <br>
+
+        <div class="uj_feladat">
+            <img src="vote.png" alt="szavazas" title="szavazas" class="vote">
+            <h2>Melyik párt nyert az adott választókörzetben a választáson?</h2>
+        </div>
+        <input type="button" value="Nyertes képviselők:" class="btn btn-primary rounded-3 w-25 my-3" id="f7gomb">
+        <br>
+        </div>
+    </div>
+    
+<script src="szavazatok.js"></script>
+</body>
+</html>

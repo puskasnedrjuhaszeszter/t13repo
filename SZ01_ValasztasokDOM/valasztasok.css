@@ -1,0 +1,111 @@
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url("szavazas.jpg");
+    background-position: left;
+    background-size: 30%;
+    background-repeat: repeat-y;
+}
+
+#szavazatok_tabla {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    z-index: 100;
+    top: 70%; 
+    border: 3px solid rgb(160, 160, 190);
+    border-radius: 3%;
+    background-color: rgb(225, 238, 243);
+}
+
+#nyertesek_tabla {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    z-index: 100;
+    top: 70%; 
+    border: 3px solid rgb(160, 160, 190);
+    border-radius: 3%;
+    background-color: rgb(225, 238, 243);
+}
+
+#x_gomb, #x2_gomb {
+    display: block;
+    position: absolute;
+    right: 10px;
+    color: black;
+    text-align: center;
+    padding-top: 3px;
+    width: 30px;
+    height: 30px;
+    border-radius: 25%;
+    margin: 5px;
+    transition: all .3s ease;
+    background-color: rgb(89, 89, 194);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    border: 2px solid rgb(10, 10, 241);
+    border-radius: 10px;
+    background-color: rgb(55, 150, 240);
+}
+
+#feladatsor {
+    padding: 20px;
+    border: 3px solid rgb(10, 10, 241);
+    background-color: white;
+    position:absolute;
+    right: 0%;
+    max-width: 70%;
+}
+
+ul{
+    line-height: 1.5;
+    margin-left: 3em;
+}
+
+.btn {
+    transition: all .5s ease;
+    border: 1px solid rgb(10, 10, 241);
+}
+
+.form-control {
+    border: 1px solid rgb(10, 10, 241);
+    margin-left: 3em;
+}
+
+h5 {
+    color: rgb(34, 34, 112);
+    display: block;
+}
+h2 {
+    color: rgb(34, 34, 112);
+}
+.vote {
+    float: inline-start;
+    max-height: 3rem;
+}
+
+.uj_feladat {
+    clear: both;
+}
+#f2gomb, #f3gomb, #f6gomb, p, #f1, #f2 {
+    margin-left: 3em;
+}
+#f6gomb{
+    display: block;
+}
