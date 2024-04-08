@@ -1,0 +1,27 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+}
+
+#RGBkodMegjelenito, #HEXkodMegjelenito {
+    font-size: 180px;
+    text-shadow: 3px 3px 3px black;
+}
+
+#keveroFelulet{
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px black;
+}
